@@ -4,8 +4,8 @@ import "./App.css";
 import trumpet from "./audio/trumpet.mp3";
 import stuck from "./audio/stuck.mp3";
 import AWS from "aws-sdk";
-//const socket = io(procces.env.REACT_APP_SERVER);
-const socket = io("http://localhost:4000");
+const socket = io(procces.env.REACT_APP_SERVER);
+//const socket = io("http://localhost:4000");
 const Polly = new AWS.Polly(
   {
     accessKeyId: process.env.REACT_APP_KEY,
