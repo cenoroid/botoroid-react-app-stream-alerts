@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import io from "socket.io-client";
 import "./App.css";
 import trumpet from "./audio/trumpet.mp3";
-import stuck from "./audio/stuck.mp3";
+//import stuck from "./audio/stuck.mp3";
 import AWS from "aws-sdk";
 const socket = io("https://botoroid-express-app.herokuapp.com");
 //const socket = io("http://localhost:4000");
