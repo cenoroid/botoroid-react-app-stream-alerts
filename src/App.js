@@ -4,12 +4,12 @@ import "./App.css";
 import trumpet from "./audio/trumpet.mp3";
 import stuck from "./audio/stuck.mp3";
 import AWS from "aws-sdk";
-const socket = io(process.env.REACT_APP_SERVER);
+const socket = io("https://botoroid-express-app.herokuapp.com");
 //const socket = io("http://localhost:4000");
 const Polly = new AWS.Polly(
   {
-    accessKeyId: process.env.REACT_APP_KEY,
-    secretAccessKey: process.env.REACT_APP_SECRET,
+    accessKeyId: "AKIA2G3LWCM2UUXUDZH4",
+    secretAccessKey: "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",
     region: "eu-west-3",
   },
   (data) => {
