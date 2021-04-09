@@ -75,7 +75,8 @@ class App extends Component {
     }, 5000);
     setTimeout(() => {
       this.setState((prevState) => {
-        let alerts = Array.from(prevState);
+        let alerts = [...prevState.alert];
+        console.log(alerts);
         alerts.shift();
         console.log(this.alertsArray);
         alerts = alerts.concat(this.alertsArray);
