@@ -29,7 +29,7 @@ const App = () => {
               fontSize: 40,
             }}
           >
-            {alerts[0].username} has redeemed {alerts[0].event}
+            {alerts[0].text}
           </h2>
           <audio>{alertPlay()}</audio>
         </div>
