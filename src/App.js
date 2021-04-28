@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import "./App.css";
 import trumpet from "./audio/trumpet.mp3";
 //import stuck from "./audio/stuck.mp3";
-const socket = io("https://botoroid-express-app.herokuapp.com");
+const socket = io("https://botoroid.xyz");
 //const socket = io("http://localhost:4000");
 
 const App = () => {
