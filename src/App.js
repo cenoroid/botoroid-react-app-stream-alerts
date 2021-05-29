@@ -64,7 +64,7 @@ const App = () => {
   }
   function alertPlay() {
     let sound = new Audio(trumpet);
-    sound.volume = 0.2;
+    sound.volume = 0.4;
     sound.play();
     setTimeout(() => {
       speak();
