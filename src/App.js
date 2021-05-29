@@ -58,13 +58,13 @@ const App = () => {
       var blob = new Blob([arrayBuffer]);
       var url = URL.createObjectURL(blob);
       let textToSpeech = new Audio(url);
-      textToSpeech.volume = 0.9;
+      textToSpeech.volume = 1;
       textToSpeech.play();
     }
   }
   function alertPlay() {
     let sound = new Audio(trumpet);
-    sound.volume = 0.6;
+    sound.volume = 0.5;
     sound.play();
     setTimeout(() => {
       speak();
