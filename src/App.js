@@ -4,6 +4,7 @@ import "./App.css";
 import trumpet from "./audio/trumpet.mp3";
 //import stuck from "./audio/stuck.mp3";
 const socket = io("https://botoroid.xyz");
+const socket2 = io("https://second.botoroid.xyz");
 //const socket = io("http://localhost:4000");
 
 const App = () => {
@@ -13,6 +14,9 @@ const App = () => {
 
   useEffect(() => {
     socket.on("event", (data) => {
+      setAlerts((prev) => [...prev, data]);
+    });
+    socket2.on("event", (data) => {
       setAlerts((prev) => [...prev, data]);
     });
   }, []);
@@ -60,7 +64,7 @@ const App = () => {
   }
   function alertPlay() {
     let sound = new Audio(trumpet);
-    sound.volume = 0.1;
+    sound.volume = 0.2;
     sound.play();
     setTimeout(() => {
       speak();
