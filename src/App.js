@@ -58,7 +58,7 @@ const App = () => {
       var blob = new Blob([arrayBuffer]);
       var url = URL.createObjectURL(blob);
       let textToSpeech = new Audio(url);
-      textToSpeech.volume = 0.7;
+      textToSpeech.volume = 0.9;
       textToSpeech.play();
     }
   }
